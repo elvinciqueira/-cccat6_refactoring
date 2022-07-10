@@ -1,4 +1,3 @@
-// @ts-nocheck
 const FIRST_CHECK_DIGIT = 10;
 const SECOND_CHECK_DIGIT = 11;
 
