@@ -1,0 +1,20 @@
+{
+  "name": "cccat6_refactoring",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:elvinciqueira/cccat6_refactoring.git",
+  "author": "Elvin Ciqueira <elvinciqueira@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
