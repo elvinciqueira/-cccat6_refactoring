@@ -4,7 +4,7 @@ const SECOND_CHECK_DIGIT = 11;
 export function validate(rawCpf: string | null | undefined) {
   if (!rawCpf) return false;
   const cpf = cleanCpf(rawCpf);
-  if (isValidLength(cpf)) return false;
+  if (isInvalidLength(cpf)) return false;
   if (isIdenticalDigits(cpf)) return false;
   const calculatedCheckDigit1 = calculateCheckDigit(cpf, FIRST_CHECK_DIGIT);
   const calculatedCheckDigit2 = calculateCheckDigit(cpf, SECOND_CHECK_DIGIT);
@@ -18,7 +18,7 @@ function cleanCpf(cpf: string) {
   return cpf.replace(regex, '');
 }
 
-function isValidLength(cpf: string) {
+function isInvalidLength(cpf: string) {
   return cpf.length !== 11;
 }
 
